@@ -19,6 +19,9 @@ public partial class Settings : ModSetting
     {
         DropdownMultiplier = "Few Blocks";
     }
+    
+    [SettingsUIMultilineText]
+    public string MultilineText => "REQUIRES SAVE RELOAD";
 
     [SettingsUIDropdown(typeof(Settings), nameof(GetStringDropdownItems))]
     public string DropdownMultiplier { get; set; } = "Few";

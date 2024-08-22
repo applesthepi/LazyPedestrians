@@ -19,13 +19,18 @@ public class LocaleEnUs : IDictionarySource
             { m_Settings.GetSettingsLocaleID(), "Lazy Pedestrians" },
             {
                 m_Settings.GetOptionLabelLocaleID(
+                    nameof(Settings.MultilineText)),
+                "REQUIRES SAVE RELOAD"
+            },
+            {
+                m_Settings.GetOptionLabelLocaleID(
                     nameof(Settings.DropdownMultiplier)),
                 "Walking Cost Multiplier"
             },
             {
                 m_Settings.GetOptionDescLocaleID(
                     nameof(Settings.DropdownMultiplier)),
-                "REQUIRES RESTART"
+                "REQUIRES SAVE RELOAD (don't care enough to make these settings apply instantly, PRs welcome!)"
             },
         };
     }
